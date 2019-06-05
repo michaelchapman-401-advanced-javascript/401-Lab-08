@@ -4,8 +4,7 @@ const uuid = require('uuid/v4');
 
 const schema = {
   id: {required: true},
-  name: {required: true},
-  desc: {required: true},
+  name: {required: true}
 };
 
 class Categories {
@@ -61,7 +60,6 @@ class Categories {
         record[field] = entry[field];
       }
     });
-  
     return valid ? record : undefined;
   }
 }
